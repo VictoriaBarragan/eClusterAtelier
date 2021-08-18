@@ -1,0 +1,124 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing:border-box;
+	font-family: 'Alegreya SC', serif;
+}
+
+body{
+	background:#FFFFFF;
+}
+
+header, .main, footer{
+	width: 100%;
+	margin: 10px auto;
+}
+
+header nav{
+	background:#15B6B8;
+	overflow: hidden;
+	position: relative;
+	margin: 5px 0px;
+	border-radius:5px;
+}
+
+header nav ul{
+	list-style: none;
+}
+
+header nav ul li{
+	float: left;
+}
+
+header nav ul li a{
+	padding: 20px 40px;
+	display: block;
+	text-decoration: none;
+	color:#FFFFFF;
+}
+
+header nav ul li a:hover{
+	background: #A1E6E8;
+	color:#211174;
+}
+
+h3{
+	text-align:center;
+	background:#15B6B8;
+	border-radius:6px;
+	color:#FFFFFF;
+}
+
+.main{
+	overflow:hidden;
+	margin: 5px 5px 10px 5px;
+	position:relative;
+	background:#F5ECCE;
+	/*background:#F2F5A9;*/
+	padding:20px;
+	border-radius:10px;
+}
+
+.logo{
+	width:25%;
+	text-align: left;
+	margin:auto;
+	display:block;
+	border-radius:10px;	
+}
+
+form{
+	width:50%;
+	border: 1px solid #211174;
+	padding: 15px;
+	margin:auto;
+	display:block;
+	border-radius:6px;
+	background:#A1E5E5;
+}
+
+label{
+	width:100%;
+	font-size:12px;
+	display: block;
+	font-weight: bold;
+	color:#211174;
+}
+
+input{
+	width:100%;
+	margin-bottom:25px;
+	padding: 10px;
+	box-sizing:border-box;
+	border:1px solid #211174; 
+}
+
+input:focus{
+	background:#CEF6D8;
+	border:1px solid #5858FA;
+}
+
+.btn_enviar{
+	width:25%;
+  	font: bold 12px alegreya;
+  	text-decoration: none;
+  	background-color:#7CB119;
+  	color:#FFFFFF;
+  	padding: 4px 12px;
+}
+
+.btn_cancelar{
+	width:25%;
+  	font: bold 12px alegreya;
+  	text-decoration: none;
+  	background-color:#D5DBDB;
+  	color:#211174;
+  	padding: 4px 12px;
+}
+
+.pie{
+	background:#15B6B8;
+	padding:20px 40px;
+	color:#FFFFFF;
+	text-align:center;
+}

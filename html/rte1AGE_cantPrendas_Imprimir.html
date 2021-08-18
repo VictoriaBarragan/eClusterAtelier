@@ -1,0 +1,158 @@
+<doctype html>
+<html lan="en">
+	<head>
+		<!--Meta tags requeridos-->
+		<meta charset="UTP-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="shortcut icon" href="#" />
+		<title>Reporte1_AGE</title>
+		
+		<!-- Bootstrap CSS -->
+    	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+		<!--CSS Personalizado-->
+		<link rel="stylesheet" type="text/css" href="../css/misPostulacs.css">
+		
+		<!--datables estilo bootstrap 4 CSS-->  
+    	<link rel="stylesheet"  type="text/css" href="datatables/DataTables-1.10.18/css/dataTables.bootstrap4.min.css">
+           
+    	<!--font awesome con CDN Bajándolo de Internet-->  
+    	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+		<!--font awesome con CDN Tomándolo de carpeta local-->  
+    	<!--<link rel="stylesheet" href="css/fontawesome-free-5.11.2-web/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">-->
+
+	</head>
+	<body>
+		<main class="consultConv">
+			<h4>Reporte: Cantidades por Prenda</h4><br>
+			<div>
+				<button type="button">Exportar a Excel</button>
+				<button type="button">Exportar a PDF</button>
+				<button type="button">Imprimir</button>
+			</div>
+			<br>
+			<table id="example" class="convocatorias" role="table">
+				<thead role="row group">
+					<tr role="row">
+						<th role="1">Código Convocatoria</th>
+						<th role="2">Estado</th>
+						<th role="3">Nombre Prenda</th>
+						<th role="4">Cantidad</th>
+					</tr>		
+				</thead>
+				<tbody>
+					<tr role="row">
+						<td>AGE2090CONV001</td>
+						<td><label>En desarrollo</label></td>
+						<td><label>Jeans</label></td>
+						<td><label>100</label></td>
+					</tr>
+					<tr role="row">
+						<td>AGE2090CONV002</td>
+						<td><label>Suspendida</label></td>
+						<td><label>Jeans</label></td>
+						<td><label>100</label></td>
+					</tr>
+					<tr role="row">
+						<td>AGE2090CONV003</td>
+						<td><label>En desarrollo</label></td>
+						<td><label>Jeans</label></td>
+						<td><label>200</label></td>
+					</tr>
+					<tr role="row">
+						
+						<td colspan="3" class="derecha">Total Prendas</td>
+						<td>400</td>
+					</tr>
+				</tbody>
+			</table><br>
+			<table class="convocatorias" role="table">
+				<thead role="row group">
+					<tr role="row">
+						<th role="1">Código Convocatoria</th>
+						<th role="2">Estado</th>
+						<th role="3">Nombre Prenda</th>
+						<th role="4">Cantidad</th>
+					</tr>		
+				</thead>
+				<tbody>
+					<tr role="row">
+						<td>AGE2090CONV010</td>
+						<td><label>En desarrollo</label></td>
+						<td><label>Camisas</label></td>
+						<td><label>50</label></td>
+					</tr>
+					<tr role="row">
+						<td>AGE2090CONV020</td>
+						<td><label>En Desarrollo</label></td>
+						<td><label>Camisas</label></td>
+						<td><label>100</label></td>
+					</tr>
+					<tr role="row">
+						<td>AGE2090CONV030</td>
+						<td><label>Suspendida</label></td>
+						<td><label>Camisas</label></td>
+						<td><label>80</label></td>
+					</tr>
+					<tr role="row">
+						<td colspan="3" class="derecha">Total Prendas</td>
+						<td>230</td>
+					</tr>
+				</tbody>
+			</table><br>
+			<table class="convocatorias" role="table">
+				<thead role="row group">
+					<tr role="row">
+						<th role="1">Código Convocatoria</th>
+						<th role="2">Estado</th>
+						<th role="3">Nombre Prenda</th>
+						<th role="4">Cantidad</th>
+					</tr>		
+				</thead>
+				<tbody>
+					<tr role="row">
+						<td>AGE2090CONV100</td>
+						<td><label>En desarrollo</label></td>
+						<td><label>Sudaderas</label></td>
+						<td><label>100</label></td>
+					</tr>
+					<tr role="row">
+						<td>AGE2090CONV200</td>
+						<td><label>Suspendida</label></td>
+						<td><label>Sudaderas</label></td>
+						<td><label>50</label></td>
+					</tr>
+					<tr role="row">
+						<td>AGE2090CON300</td>
+						<td><label>En desarrollo</label></td>
+						<td><label>Sudaderas</label></td>
+						<td><label>10</label></td>
+					</tr>
+					<tr role="row">
+						<td colspan="3" class="derecha">Total Prendas</td>
+						<td>160</td>
+					</tr>
+				</tbody>
+			</table>
+		
+			<!-- jQuery, Popper.js, Bootstrap JS -->
+    		<script src="jquery/jquery-3.3.1.min.js"></script>
+    		<script src="popper/popper.min.js"></script>
+    		<script src="bootstrap/js/bootstrap.min.js"></script>
+      
+    		<!-- datatables JS -->
+    		<script type="text/javascript" src="datatables/datatables.min.js"></script>    
+     
+    		<!-- para usar botones en datatables JS -->  
+    		<script src="datatables/Buttons-1.5.6/js/dataTables.buttons.min.js"></script>  
+    		<script src="datatables/JSZip-2.5.0/jszip.min.js"></script>    
+    		<script src="datatables/pdfmake-0.1.36/pdfmake.min.js"></script>    
+    		<script src="datatables/pdfmake-0.1.36/vfs_fonts.js"></script>
+    		<script src="datatables/Buttons-1.5.6/js/buttons.html5.min.js"></script>
+     
+    		<!-- código JS propìo-->    
+    		<script type="text/javascript" src="main.js"></script>  
+		</main>
+	</body>
+</html>

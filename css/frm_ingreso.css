@@ -1,0 +1,135 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing:border-box;
+	font-family: 'Alegreya SC', serif;
+}
+
+body{
+	background: #FFFFFF;
+}
+
+header, .main, footer{
+	width: 100%;
+	margin: 10px auto;
+}
+
+header nav{
+	background:#15B6B8;
+	overflow: hidden;
+}
+
+header nav ul{
+	list-style: none;
+}
+
+header nav ul li{
+	float: left;
+}
+
+header nav ul li a{
+	padding: 20px 40px;
+	display: block;
+	text-decoration: none;
+	color:#FFFFFF;
+}
+
+header nav ul li a:hover{
+	background: #A1E5E5;
+	color:#211174;
+}
+
+.encab_ing{
+	text-align:center;
+	background:#15B6B8;
+	border-radius:5px;
+	color:#FFFFFF;
+}
+
+.main{
+	background:#F5ECCE;
+	/*background:#F2F5A9;*/
+	padding:20px;
+	border-radius:10px;
+}
+
+.logo{
+	width:25%;
+	margin: auto;
+	display:block;
+	border-radius:10px;	
+}
+
+form{
+	width:50%;
+	border: 1px solid #211174;
+	margin: auto;
+	display:block;
+	padding: 15px;
+	border-radius:6px;
+	background:#A1E5E5;
+}
+
+label{
+	width:100%;
+	font-size:12px;
+	color:#211174;
+	display: black;
+	font-weight: bold;
+}
+
+input{
+	width:100%;
+	margin-bottom:5px;
+	padding: 10px;
+	box-sizing:border-box;
+	border:1px solid #211174; 
+}
+
+input:focus{
+	background:#CEF6D8;
+	border:1px solid #5858FA;
+}
+
+.recordar{
+	color:#211174;
+}
+
+.btn_AC{
+	font: bold 12px alegreya;
+  	text-decoration: none;
+  	background-color: #211174;
+  	color: #FFFFFF;
+  	padding: 4px 12px 4px 12px;
+}
+
+.btn_SAT{
+  	font: bold 12px alegreya;
+  	text-decoration: none;
+  	background-color: #FF5703;
+  	color: #FFFFFF;
+  	padding: 4px 12px;
+}
+
+.btn_admin{
+  	font: bold 12px alegreya;
+  	text-decoration: none;
+  	background-color:#B2922A;
+  	color:#FFFFFF;
+	padding: 4px 12px;
+}
+
+.btn_cancelar{
+  	font: bold 12px alegreya;
+  	text-decoration: none;
+  	background-color:#D5DBDB;
+  	color:#211174;
+  	padding: 4px 12px;
+}
+
+.pie{
+	background:#15B6B8;
+	padding:20px 40px;
+	color:#FFFFFF;
+	text-align:center;
+}

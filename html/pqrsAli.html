@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>PQRS Aliado</title>
+        <link href="https://fonts.googleapis.com/css?family=Parisienne&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Alegreya+SC&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Alegreya&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="../css/pqrsAli.css">
+        <link rel="icon" href="../img/favicon.ico" sizes="32x32" type="image/vnd.microsoft.icon">
+    </head>
+    <body>
+        <section class="main">
+        	<article class="elemento1">	
+	       		<form>
+	       			<h3>Formulario Registro PQRS</h3>
+	       			<label>Primer Nombre*</label>
+	       			<input type="text" name="nombre" placeholder="Digite su primer nombre" maxlength="20" size="20" required>
+	       			<label>Segundo Nombre</label>
+	       			<input type="text" name="apellido" placeholder="Digite su segundo nombre" maxlength="20" required>
+	       			<label>Primer Apellido*</label>
+	       			<input type="text" name="apellido" placeholder="Digite su primer apellido" maxlength="20" required>
+	       			<label>Segundo Apellido</label>
+	       			<input type="text" name="apellido" placeholder="Digite su segundo apellido" maxlength="20" required>
+	       			<label>Correo*</label>
+	       			<input type="email" name="email" placeholder="Ingresar E-Mail" maxlength="35" required>
+	       			<label>Tipo PQRS</label>
+					<select>
+						<option value="">Seleccionar</option>
+						<option value="1">Pregunta</option>
+						<option value="2">Queja</option>
+						<option value="3">Reclamo</option>
+						<option value="4">Sugerencia</option>
+					</select><br>
+	       			<label>Asunto*</label>
+	       			<input type="text" name="titulo" placeholder="Ingresar tìtulo del mensaje" maxlength="255" required>
+	       			<h4>Mensaje*</h4>
+	       			<textarea rows='10' cols='60' placeholder='Escriba su mensaje.' required></textarea>
+	       			<!--<textarea name="message" rows="10" cols="60"></textarea>-->
+	       			<input class="boton" type="submit" name="Enviar">
+	       		</form>
+        	</article>
+        </section>
+    </body>
+</html>

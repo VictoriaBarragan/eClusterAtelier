@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Datos Convocatoria</title>
+        <link rel="stylesheet" type="text/css" href="../css/verInfoConv.css">
+        <link rel="icon" href="../img/favicon.ico" sizes="32x32" type="image/vnd.microsoft.icon">
+    </head>
+    <body>
+    	<main>
+        	<section>
+                <h3>Detalles Requerimiento Convocatoria</h3><br>
+                <form name="detalleReqConv">
+                    <form>    
+                        <fieldset>
+            	        	<legend>Características de la prenda</legend>
+            	            <label>Tipo</label>
+                            <input type="" name="" placeholder="Prenda interior o exterior" disabled>
+                            <label>Nombre</label>
+                            <input type="" name="" placeholder="Nombre prenda" disabled>
+                            <label>Usuario</label>
+                            <input type="" name="" placeholder="Usuario prenda" disabled>
+                            <Label>Usos</label>
+        			        <input type="" name="" placeholder="Usos prenda" disabled>
+        			        <label>Material</label>
+        			        <input type="" name="" placeholder="Material" disabled>
+        	            </fieldset><br>
+                    </form><br>
+                    <form>
+                        <fieldset>
+                            <legend>Distribución cantidades por talla y color</legend>
+                            <table> 
+                            	<thead rol="rowgroup">
+                                    <tr rol="row">
+                                    	<th rol="1">Talla</th>
+                                        <th rol="2">Color</th>
+                                        <th rol="3">Cantidad</th>
+                                        <th rol="4">Observación</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr rol="row">
+                            	        <td rol="cell" width="1">
+                                        	<input type="" name="" placeholder="Talla" disabled>
+                                        </td>
+                                        <td rol="cell"  width="10">
+                                         	<input type="" name="" placeholder="Color" disabled>        
+                                        </td>
+                                        <td rol="cell"  width="3">
+                                            <input type="text" name="cantidad" placeholder="###" disabled>
+                                        </td>                            
+                                        <td rol="cell" width="100">
+                                            <input rows='2' cols='60' placeholder='Anotación' type="text" name="Anotación" disabled="">
+                                        </td>
+                                    </tr>
+                                    <tr rol="row">
+                                        <td rol="cell">
+                                            <input type="" name="" placeholder="Talla" disabled>
+                                        </td>
+                                        <td rol="cell">
+                                            <input type="" name="" placeholder="Color" disabled>
+                                        </td>
+                                        <td rol="cell">
+                                            <input type="text" name="cantidad" placeholder="###" disabled>
+                                        </td>                            
+                                        <td rol="cell">
+                                            <input rows='2' cols='60' placeholder='Anotación' type="text" name="Anotación" disabled>
+                                        </td>
+                                    </tr>
+                                    <tr rol="row">
+                                        <td rol="cell">
+                                            <input type="" name="" placeholder="Talla" disabled>
+                                        </td>
+                                        <td rol="cell">
+                                            <input type="" name="" placeholder="Color" disabled>        
+                                        </td>
+                                        <td rol="cell">
+                                            <input type="text" name="cantidad" placeholder="###" disabled>
+                                        </td>                            
+                                        <td rol="cell">
+                                            <input rows='2' cols='60' placeholder='Anotación' type="text" name="Anotación" disabled>
+                                        </td>
+                                    </tr>
+                                    <tr rol="row">
+                                        <td rol="cell">
+                                            <input type="" name="" placeholder="Talla" disabled>
+                                        </td>
+                                        <td rol="cell">
+                                            <input type="" name="" placeholder="Color" disabled>        
+                                        </td>
+                                        <td rol="cell">
+                                            <input type="text" name="cantidad" placeholder="###" disabled>
+                                        </td>                            
+                                        <td rol="cell">
+                                            <input rows='2' cols='60' placeholder='Anotación' type="text" name="Anotación" disabled>
+                                        </td>
+                                    </tr>        
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <td>Total Cantidad Prendas:</td>
+                                        <td>#######</td>
+                                    </tr>
+                                </tfoot>  
+                            </table>
+                        </fieldset><br>
+                    </form><br>
+                    <form>
+                        <fieldset>
+                            <legend>Presupuesto</legend>
+                            <label>Presupuesto</label>
+                           	<input type="number" name="presupuesto" pattern="[0-9]{10}" maxlength="9" size="10" disabled placeholder="Presupuesto">
+                        </fieldset><br>
+                    </form><br>
+                    <form>
+                        <fieldset>
+                            <legend>Paquete de servicios</legend>
+                            <label class="container">Confección
+                                <input type="checkbox" name="servConfeccion" checked="enable">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="container">Planchado
+                                <input type="checkbox" name="servPlanchado" disabled>
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="container">Empacado
+                                <input type="checkbox" name="servEmpacado" disabled>    
+                                <span class="checkmark"></span>
+                            </label>
+                        </fieldset><br>
+                    </form><br>
+                    <div>
+                        <button class="btnVolverAtras" type="button" value="volverAtras" onclick=location.href="misConvocatorias.html">Volver atrás</button>
+                        <br><br>
+                    </div>
+                </form>
+            </section>
+        </main>
+	</body>
+</html>

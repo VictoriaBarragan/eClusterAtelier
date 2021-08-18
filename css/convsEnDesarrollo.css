@@ -1,0 +1,71 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing:border-box;
+	font-family: 'Alegreya SC', serif;
+}
+
+body{
+	background: #FFFFFF;
+}
+
+main{
+	width: 100%;
+  max-width: 1000px;
+  margin:auto;
+}
+
+h4{
+	color: #211174;
+}
+
+/*Inicio estilo tabla del listado de las convocatorias en desarrollo.*/
+
+.convocatorias {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.convocatorias td, .convocatorias th {
+  border: 1px solid #DDDDDD;
+  padding: 8px;
+}
+
+.convocatorias tr:nth-child(even){background-color: #F2F2F2;}
+
+.convocatorias tr:hover {background-color: #DDDDDD;}
+
+.convocatorias th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #211174;
+  color: white;
+}
+
+/*Fin estilo tabla del listado de las convocatorias en desarrollo*/
+
+.btnConsult{
+	width: 100%;
+  cursor: pointer;
+}
+
+/*div{
+  width: 100%;
+  border: 1px solid red;
+  max-width: 1000px;
+}*/
+
+.btnVolverAtras{
+  width: 20%;
+  font: bold 90% alegreya;
+  text-decoration: none;
+  background-color:#211174;
+  color:#FFFFFF;
+  padding: 4px 12px 4px 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  display: block;
+  margin: auto; 
+}

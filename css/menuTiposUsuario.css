@@ -1,0 +1,216 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing:border-box;
+}
+
+body{
+	background: #FFFFFF;
+	font-family: 'Alegreya SC', serif;
+}
+
+/* INICIO ESTILO DEL HEADER Y FOOTER*/
+
+header, .main, footer{
+	width: 100%;
+	margin: 10px auto;
+}
+
+header nav{
+	background:#15B6B8;
+	overflow: hidden;
+}
+
+header nav ul{
+	list-style: none;
+}
+
+header nav ul li{
+	float: left;
+}
+
+header nav ul li a{
+	padding: 20px 40px;
+	display: block;
+	text-decoration: none;
+	color:#FFFFFF;
+}
+
+header nav ul li a:hover{
+	background: #A1E5E5;
+	color:#211174;
+}
+
+.encab_ing{
+	text-align:center;
+	background:#15B6B8;
+	border-radius:5px;
+	color:#FFFFFF;
+}
+
+.main{
+	background:#F5ECCE;
+	/*background:#F2F5A9;*/
+	padding:20px;
+	border-radius:10px;
+}
+
+.logo{
+	width:20%;
+	margin: auto;
+	display:block;
+	border-radius:10px;	
+}
+
+.pie{
+	background:#15B6B8;
+	padding:20px 40px;
+	color:#FFFFFF;
+	text-align:center;
+}
+
+/* FIN ESTILO DEL HEADER Y FOOTER*/
+
+
+/*INICIO ESTILO SIN HEADER NI FOOTER*/
+
+main{
+	width: 100%;
+	max-width: 350px;
+	margin:20px auto;
+	overflow:hidden;
+	position:relative;
+	background:#A1E5E5;
+	padding:20px;
+	box-shadow: 5px 5px grey;
+	border-radius: 5px;
+}
+
+.logo{
+	width:40%;
+	height:auto;
+	border-radius:10px;	
+	display: block;
+	margin: auto;
+}
+
+label{
+	width:100%;
+	font-size:15px;
+	color:#211174;
+	font-weight: bold;
+	display: inline-flex;
+}
+
+.logueo{
+	border:groove;
+	padding: 20px;
+}
+
+.accesosUser{
+	width: 100%;
+	height: 40px;
+}
+
+.btn_AGE{
+	width: 100%;
+	font: bold 90% alegreya;
+	text-decoration: none;
+	background-color:#211174;
+	color: #FFFFFF;
+	padding: 4px 12px 4px 12px;
+	margin:2px;
+	border-radius:10px;
+	pointer-events: auto;
+	cursor: pointer;
+}
+
+.btn_AGE:hover{
+	color:#A1E5E5;
+}
+
+.btn_SAT{
+	width: 100%;
+	font: bold 90% alegreya;
+	text-decoration: none;
+	background-color:#FF5703;
+	color: #FFFFFF;
+	padding: 4px 12px 4px 12px;
+	margin:2px;
+	border-radius:10px;
+	cursor: pointer;
+}
+
+.btn_SAT:hover{
+	color:#211174;
+}
+
+.btn_ADM{
+	width: 100%;
+	font: bold 90% alegreya;
+	text-decoration: none;
+	background-color:#B2922A;
+	color: #FFFFFF;
+	padding: 4px 12px 4px 12px;
+	margin:2px;
+	border-radius:10px;
+	cursor: pointer;
+}
+
+.btn_ADM:hover{
+	color:#211174;
+}
+
+.btn_cancelar{
+	width: 100%;
+  	font: bold 90%px alegreya;
+  	text-decoration: none;
+  	background-color:#D5DBDB;
+  	color:#FF5703;
+  	padding: 4px 12px 4px 12px;
+  	margin: 2px;
+ 	border-radius: 10px;
+ 	cursor: pointer; 
+ }
+
+.btn_cancelar:hover{
+ 	color: #211174;
+ }
+
+.btn_restablecer{
+	width: 100%;
+  	font: bold 90%px alegreya;
+  	text-decoration: none;
+  	background-color:#D5DBDB;
+  	color:#211174;
+	padding: 4px 12px 4px 12px;
+ 	margin: 2px;
+ 	border-radius: 10px;
+ 	cursor: pointer; 
+ }
+
+.btn_restablecer:hover{
+	color:#FF5703;
+ }
+
+ .btn_enviar{
+	width: 100%;
+  	font: bold 90%px alegreya;
+  	text-decoration: none;
+  	background-color:#D5DBDB;
+  	color:#211174;
+  	padding: 4px 12px 4px 12px;
+ 	margin: 2px;
+ 	border-radius: 10px;
+ 	cursor: pointer; 
+ }
+
+.btn_enviar:hover{
+	color:#FF5703;
+ }
+
+.botones{
+	text-align: center;
+}
+
+/* FIN ESTILO SIN HEADER NI FOOTER*/

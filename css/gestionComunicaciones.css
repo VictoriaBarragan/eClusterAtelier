@@ -1,0 +1,136 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing:border-box;
+}
+
+body{
+	background: #FFFFFF;
+	font-family: 'Alegreya SC', serif;
+}
+
+main{
+	width: 100%;
+	max-width: 500px;
+	margin:20px auto;
+	overflow:hidden;
+	position:relative;
+	background: #C3C3C3;
+	padding:20px;
+	box-shadow: 10px 10px #949EA2;
+	border-radius: 5px;
+}
+
+.tituloMenuRtes{
+	color: #FFFFFF;
+	font-size: 25px;
+	
+}
+
+.btn_Rte1{
+	width: 100%;
+	height: 60px;
+	font: bold 100% alegreya;
+	font-size: 20px;
+	text-decoration: none;
+	background:linear-gradient(50deg, #B2922A, #E06B00);
+	color: #FFFFFF;
+	padding: 4px 12px 4px 12px;
+	margin:2px;
+	border-radius:10px;
+	pointer-events: auto;
+	cursor: pointer;
+}
+
+.btn_Rte1:hover{
+	transform: translateY(5px);
+}
+
+.btn_Rte2{
+	width: 100%;
+	height: 60px;
+	font: bold 100% alegreya;
+	font-size: 20px;
+	text-decoration: none;
+	background:linear-gradient(50deg, #B2922A, #E06B00);
+	color: #FFFFFF;
+	padding: 4px 12px 4px 12px;
+	margin:2px;
+	border-radius:10px;
+	cursor: pointer;
+}
+
+.btn_Rte2:hover{
+	transform: translateY(5px);
+}
+
+.btn_Rte3{
+	width: 100%;
+	height: 60px;
+	font: bold 100% alegreya;
+	font-size: 20px;
+	text-decoration: none;
+	background:linear-gradient(50deg, #B2922A, #E06B00);
+	color: #FFFFFF;
+	padding: 4px 12px 4px 12px;
+	margin:2px;
+	border-radius:10px;
+	cursor: pointer;
+}
+
+.btn_Rte3:hover{
+	transform: translateY(5px);
+}
+
+.btn_cancelar{
+	width: 100%;
+  	font: bold 90%px alegreya;
+  	text-decoration: none;
+  	background-color:#D5DBDB;
+  	color:#FF5703;
+  	padding: 4px 12px 4px 12px;
+  	margin: 2px;
+ 	border-radius: 10px;
+ 	cursor: pointer; 
+ }
+
+.btn_cancelar:hover{
+ 	color: #211174;
+ }
+
+.btn_restablecer{
+	width: 100%;
+  	font: bold 90%px alegreya;
+  	text-decoration: none;
+  	background-color:#D5DBDB;
+  	color:#211174;
+	padding: 4px 12px 4px 12px;
+ 	margin: 2px;
+ 	border-radius: 10px;
+ 	cursor: pointer; 
+ }
+
+.btn_restablecer:hover{
+	color:#FF5703;
+ }
+
+ .btn_enviar{
+	width: 100%;
+  	font: bold 90%px alegreya;
+  	text-decoration: none;
+  	background-color:#D5DBDB;
+  	color:#211174;
+  	padding: 4px 12px 4px 12px;
+ 	margin: 2px;
+ 	border-radius: 10px;
+ 	cursor: pointer; 
+ }
+
+.btn_enviar:hover{
+	color:#FF5703;
+ }
+
+.botones{
+	text-align: center;
+}
+

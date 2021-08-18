@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>RegistroSatelite</title>
+        <link rel="stylesheet" type="text/css" href="../css/verInfoConv.css">
+        <link rel="icon" href="../img/favicon.ico" sizes="32x32" type="image/vnd.microsoft.icon">
+   </head>
+    <body>
+   	<main>
+	    <section>
+	    	<h3 class="tituloFrmSatelite">Detalles Satélite</h3><br>
+	    	<form name="frmDetallesSat" id=""> 
+	       		<fieldset>
+					<legend>Datos personales</legend>
+					<label>Primer nombre</label>
+				    <input type="text" name="primerNomAli" placeholder="Primer nombre" maxlength="20" disabled="true">
+				    <label>Segundo nombre</label>
+				    <input type="text" name="segundoNomAli" placeholder="Segundo nombre" maxlength="20" disabled="true">
+				    <label>Primer apellido</label>
+				    <input type="text" name="primerApelAli" placeholder="Primer apellido" maxlength="20" disabled="true">
+				    <label>Segundo apellido</label>
+				    <input type="text" name="segundoApelAli" placeholder="Segundo apellido" maxlength="20" disabled="true">
+				    <label>Teléfono fijo</label>
+				    <input type="text" name="telFijoAliado" placeholder="Teléfono fijo" pattern="[0-9]{7}" maxlength="7" disabled="true">
+				    <label>Celular</label>
+				    <input type="text" name="celAliado" placeholder="Número celular" pattern="[0-9]{10}" maxlength="10" disabled="true">
+				    <label>E-Mail</label>
+				    <input type="email" name="emailAliado" placeholder="E-Mail" maxlength="35" disabled="true">
+				    <br><br>
+					</fieldset>
+					<fieldset>	
+						<legend>Datos comerciales Satélite</legend>
+						<label>Razón social</label>
+					    <input type="text" name="razonSocAliado" placeholder="Nombre Comercial" maxlength="30" disabled="true">
+					    <label>Número registro mercantil</label>
+					    <input type="text" name="regMercAliado" placeholder="Número registro mercantil" pattern="[0-9]{10}" maxlength="10" disabled="true">
+					    <label>RUT</label>
+					    <input type="text" name="rutAliado" placeholder="Número del RUT" pattern="[0-9]{0-10}" maxlength=10 disabled="true">
+					    <label>Fecha creación</label>
+					    <input type="date" name="fechaCreacion" disabled="true">
+					    <label>Especialidad(es)</label>
+					    <table>
+					    	<thead>
+					    		<tr role="row">
+					    			<th role="1">Id Especialidad</th>
+					    			<th role="2">Especialidad</th>
+					    		</tr>
+					    	</thead>
+					    	<tbody>
+					    		<tr role="row">
+									<td role="cell"><input type="text" name="EspSatelite" placeholder="1" disabled="true" width="3"></td>
+									<td role="cell"><input type="text" name="EspSatelite" placeholder="Nombre Especialidad" disabled="true" width="15"></td>
+								</tr>
+								<tr role="row">
+									<td role="cell"><input type="text" name="EspSatelite" placeholder="2" disabled="true" width="3"></td>
+									<td role="cell"><input type="text" name="EspSatelite" placeholder="Nombre Especialidad" disabled="true" width="15"></td>
+								</tr>
+								<tr role="row">
+									<td role="cell"><input type="text" name="EspSatelite" placeholder="3" disabled="true" width="3"></td>
+									<td role="cell"><input type="text" name="EspSatelite" placeholder="Nombre Especialidad" disabled="true" width="15"></td>
+								</tr>
+					    	</tbody>
+						</table>
+						<label>Dirección Establecimiento</label>
+						<input type="text" name="dirAliado" disabled="true" placeholder="Dirección Establecimiento">			
+						<label for="nombreLoc">Localidad</label>
+						<input type="text" name="LocalidadSat" placeholder="Nombre Localidad" disabled="true">
+						<label for="nombreBarrio">Barrio</label>
+						<input type="text" name="BarrioSat" placeholder="Nombre Barrio" disabled="true">
+						<br><br>
+					</fieldset>
+					<fieldset>
+						<legend>Capacidad instalada</legend>        		
+						<table class="adapTablaMaq" role="table">
+							<thead role="rowgroup">
+								<tr role="row">
+									<th role="12">Tipo máquina</th>
+									<th role="13">Marca</th> 
+									<th role="14">Modelo</th>
+									<th role="15">Cantidad</th>
+									<th role="16">Cantidad Operarios</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr role="row">
+									<td role="cell">
+										<input type="text" name="tipoMaquina" placeholder="Tipo Máquina" disabled="true">
+									</td>
+									<td role="cell">
+										<input type="text" name="marcaMaquina" placeholder="Marca Máquina" disabled="true">
+									</td>
+									<td role="cell">
+										<input type="text" name="modeloMaquina" placeholder="Modelo Máquina" disabled="true">
+									</td>
+									<td role="cell">
+										<input type="text" name="cantMaquinas" placeholder="Cantidad" disabled="true">
+									</td>
+									<td role="cell">
+										<input type="" name="cantOperarios" placeholder="Cantidad Operarios" disabled="true">
+									</td>
+								</tr>
+								<tr role="row">
+									<td role="cell">
+										<input type="text" name="tipoMaquina" placeholder="Tipo Máquina" disabled="true">
+									</td>
+									<td role="cell">
+										<input type="text" name="marcaMaquina" placeholder="Marca Máquina" disabled="true">
+									</td>
+									<td role="cell">
+										<input type="text" name="modeloMaquina" placeholder="Modelo Máquina" disabled="true">
+									</td>
+									<td role="cell">
+										<input type="text" name="cantMaquinas" placeholder="Cantidad" disabled="true">
+									</td>
+									<td role="cell">
+										<input type="" name="cantOperarios" placeholder="Cantidad Operarios" disabled="true">
+									</td>
+								</tr>
+								<tr role="row">
+									<td role="cell">
+										<input type="text" name="tipoMaquina" placeholder="Tipo Máquina" disabled="true">
+									</td>
+									<td role="cell">
+										<input type="text" name="marcaMaquina" placeholder="Marca Máquina" disabled="true">
+									</td>
+									<td role="cell">
+										<input type="text" name="modeloMaquina" placeholder="Modelo Máquina" disabled="true">
+									</td>
+									<td role="cell">
+										<input type="text" name="cantMaquinas" placeholder="Cantidad" disabled="true">
+									</td>
+									<td role="cell">
+										<input type="" name="cantOperarios" placeholder="Cantidad Operarios" disabled="true">
+									</td>
+								</tr>
+								<tr role="row">
+									<td role="cell">
+										<input type="text" name="tipoMaquina" placeholder="Tipo Máquina" disabled="true">
+									</td>
+									<td role="cell">
+										<input type="text" name="marcaMaquina" placeholder="Marca Máquina" disabled="true">
+									</td>
+									<td role="cell">
+										<input type="text" name="modeloMaquina" placeholder="Modelo Máquina" disabled="true">
+									</td>
+									<td role="cell">
+										<input type="text" name="cantMaquinas" placeholder="Cantidad" disabled="true">
+									</td>
+									<td role="cell">
+										<input type="" name="cantOperarios" placeholder="Cantidad Operarios" disabled="true">
+									</td>
+								</tr>
+								<tr role="row">
+									<td role="cell">
+										<input type="text" name="tipoMaquina" placeholder="Tipo Máquina" disabled="true">
+									</td>
+									<td role="cell">
+										<input type="text" name="marcaMaquina" placeholder="Marca Máquina" disabled="true">
+									</td>
+									<td role="cell">
+										<input type="text" name="modeloMaquina" placeholder="Modelo Máquina" disabled="true">
+									</td>
+									<td role="cell">
+										<input type="text" name="cantMaquinas" placeholder="Cantidad" disabled="true">
+									</td>
+									<td role="cell">
+										<input type="" name="cantOperarios" placeholder="Cantidad Operarios" disabled="true">
+									</td>
+								</tr>
+							</tbody>
+						</table><br>
+					</fieldset>	
+					<fieldset>
+			        	<legend>Documentos de soporte</legend>
+			        	<label>Registro mercantil:</label>
+			        		
+						<!--La siguiente etiquta <a>, trae el documento que se le indica
+						en la ruta:	
+			        	<a href="../docs/soportesAliados/ejemploCertificadoMercantil.jpg">Registro Mercantil</a>-->
+
+						<!--La siguiente etiqueta button no hace lo que se espera,
+						no trae el documento según la ruta indicada:
+						<button class="btnConsult" onclick=location.href="../docs/soportesAliados/ejemploCertificadoMercantil.jpg">Ver Documento</button>-->
+
+						<!--La siguiente etiqueta <button> si trae el documento que se
+						le indica en la ruta:-->
+						<button class="btnConsult" ><a href="../docs/soportesAliados/ejemploCertificadoMercantil.jpg">Ver documento</a></button>
+						<br>
+						<label>RUT</label>
+						<button class="btnConsult" ><a href="../docs/soportesAliados/ejemploRut.jpg">Ver documento</a></button>
+						<br>
+						<label>Foto fachada:</label>
+			        	<button class="btnConsult" ><a href="../docs/soportesAliados/fachadaTaller.jpg">Ver documento</a></button>
+			        	<br>
+			        	<label>Foto taller:</label>
+			        	<button class="btnConsult" ><a href="../docs/soportesAliados/fotoTaller.jpg">Ver documento</a></button>
+			        	<br>
+			        	<label>Foto aliado(perfil):</label>
+			        	<button class="btnConsult" ><a href="../docs/soportesAliados/logoTaller.png">Ver documento</a></button>
+			        	<br>
+			        	<label>Foto Logotipo:</label>
+			        	<button class="btnConsult" ><a href="../docs/soportesAliados/logoTaller.png">Ver documento</a></button>
+					</fieldset><br>
+				</form> 
+	        	<br>
+	        	<div>
+                    <button class="btnVolverAtras" type="button" value="volverAtras" onclick=location.href="listaSatParaAdmin.html">Volver atrás</button>
+                    <br><br>
+                </div>
+			</section>
+		</main>
+    </body>
+</html>

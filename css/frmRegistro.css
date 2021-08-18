@@ -1,0 +1,414 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing:border-box;
+}
+
+body{
+	background: #FFFFFF;
+	font-family: 'Alegreya SC', serif;
+}
+
+header, main, footer{
+	width: 100%;
+	max-width: 1300px;
+	margin:20px auto;
+}
+
+.logo{
+	width:10%;
+	height:auto;
+	text-align:left;
+	border-radius:10px;	
+}
+
+header nav{
+	background:#15B6B8;
+	overflow: hidden;
+	position: relative;
+	margin: 5px 0px;
+}
+
+header nav ul{
+	list-style: none;
+}
+
+header nav ul li{
+	float: left;
+}
+
+header nav ul li a{
+	padding: 20px 40px;
+	display: block;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+header nav ul li a:hover{
+	background: #A1E5E5;
+	color:#211174;
+}
+
+main{
+	overflow:hidden;
+	position:relative;
+	background:#F5ECCE;
+	padding:20px;
+	border-radius:10px;
+}
+
+form{
+	width:80%;
+	border: 1px solid #211174;
+	padding: 15px;
+	border-radius:6px;
+	background:#A1E5E5;
+	margin:auto;
+}
+
+h3, .tituloFrmAdmin{
+	width: 80%;
+	text-align: center;
+	background: #B2922A;
+	color: #FFFFFF;
+	border-radius: 6px;
+	padding: 3px;
+	margin:auto;
+}
+
+h3, .tituloFrmAgente{
+	width: 80%;
+	text-align: center;
+	background: #211172;
+	color: #FFFFFF;
+	border-radius: 6px;
+	padding: 3px;
+	margin:auto;
+}
+
+h3, .tituloFrmSatelite{
+	width: 80%;
+	text-align: center;
+	background: #FF5703;
+	color: #FFFFFF;
+	border-radius: 6px;
+	padding: 3px;
+	margin:auto;
+}
+
+label{
+	width:100%;
+	font-size:12px;
+	color:#211174;
+	font-weight: bold;
+	display: inline-flex;
+}
+
+input{
+	width:100%;
+	margin-bottom:5px;
+	padding: 10px;
+	border:1px solid #211174;
+}
+
+fieldset{
+	padding:20px;
+}
+
+legend{
+	font-size:20px;
+	color:#211174;
+	font-weight: bold;
+	}
+
+.dirGeo{
+	border: 1px solid grey;
+	padding: 10px;
+	width: 100%;
+}
+
+/*TABLA NOMENCLATURA DIRECCION GEOGRAFICA ADAPTATIVA *
+
+/*Max width before this PARTICULAR table gets nasty. This query will take effect for any screen smaller than 760px and 
+also iPads specifically.*/
+
+@media only screen and (max-width: 1000px), (min-device-width: 768px) and (max-device-width: 1024px)
+{
+	/*Force table to not be like tables anymore */
+	table, .adapTablaDir, thead, tbody, th, td, tr{
+		display: block;
+	}
+	/*Hide table headers (but not display: none;, for accessibility) */
+	thead tr {
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+
+    tr {
+      margin: 0 0 1rem 0;
+    }
+      
+    tr:nth-child(odd) {
+      background: #D3FCFC;
+    }
+    
+	td {
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid #D3FCFC;
+		position: relative;
+		padding-left: 50%;
+	}
+
+	td:before {
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 0;
+		left: 6px;
+		width: 45%;
+		padding-right: 10px;
+		white-space: nowrap;
+	}
+
+	/*Label the data. You could also use a data-* attribute and content for this. That way "bloats" the HTML, this 
+	way means you need to keep HTML and CSS in sync. Lea Verou has a clever way to handle with text-shadow.*/
+		
+		td:nth-of-type(1):before { content: "Tipo Calle*"; }
+		td:nth-of-type(2):before { content: "Numero*"; }
+		td:nth-of-type(3):before { content: "Letra"; }
+		td:nth-of-type(4):before { content: "Bis"; }
+		td:nth-of-type(5):before { content: "Letra"; }
+		td:nth-of-type(6):before { content: "Punto Cardinal"; }
+		td:nth-of-type(7):before { content: "Num1 Inmueble*"; }
+		td:nth-of-type(8):before { content: "Letra"; }
+		td:nth-of-type(9):before { content: "-"; }
+		td:nth-of-type(10):before { content: "Num2 Inmueble*"; }
+		td:nth-of-type(11):before { content: "Punto Cardinal"; }
+}
+
+/*FINAL TABLA NOMENCLATURA DIRECCION GEOGRAFICA ADAPTATIVA*/
+
+/* INICIO TABLA MAQUINARIA ADAPTATIVA*/
+
+/*Max width before this PARTICULAR table gets nasty. This query will take effect for any screen smaller than 760px and 
+also iPads specifically.*/
+
+@media only screen and (max-width: 1000px), (min-device-width: 768px) and (max-device-width: 1024px)
+{
+	/*Force table to not be like tables anymore */
+	table, .adapTablaMaq, thead, tbody, th, td, tr{
+		display: block;
+	}
+	/*Hide table headers (but not display: none;, for accessibility) */
+	thead tr {
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+
+    tr {
+      margin: 0 0 1rem 0;
+    }
+      
+    tr:nth-child(odd) {
+      background: #D3FCFC;
+    }
+    
+	td {
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid #D3FCFC;
+		position: relative;
+		padding-left: 50%;
+	}
+
+	td:before {
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 0;
+		left: 6px;
+		width: 45%;
+		padding-right: 10px;
+		white-space: nowrap;
+	}
+
+	/*Label the data. You could also use a data-* attribute and content for this. That way "bloats" the HTML, this 
+	way means you need to keep HTML and CSS in sync. Lea Verou has a clever way to handle with text-shadow.*/
+		
+		td:nth-of-type(1):before { content: "Tipo Maquina*"; }
+		td:nth-of-type(2):before { content: "Marca*"; }
+		td:nth-of-type(3):before { content: "Modelo*"; }
+		td:nth-of-type(4):before { content: "Cantidad*"; }
+		td:nth-of-type(5):before { content: "Cantidad Operarios*"; }
+}
+
+/* FINAL TABLA MAQUINARIA ADAPTATIVA*/
+
+.selectAltura{
+  height:35px;
+}
+
+.btn_AC{
+	width: 20%;
+	font: bold 90% alegreya;
+	text-decoration: none;
+	background-color:#211174;
+	color: #FFFFFF;
+	padding: 4px 12px 4px 12px;
+	margin:auto;
+	border-radius:10px;
+	pointer-events: auto;
+	cursor: pointer;
+}
+
+.btn_AC:hover{
+	color:#A1E5E5;
+}
+
+.btn_SAT{
+	width: 20%;
+	font: bold 90% alegreya;
+	text-decoration: none;
+	background-color:#FF5703;
+	color: #FFFFFF;
+	padding: 4px 12px 4px 12px;
+	margin:auto;
+	border-radius:10px;
+	cursor: pointer;
+}
+
+.btn_SAT:hover{
+	color:#211174;
+}
+
+.btnEnviar{
+	width: 20%;
+  	font: bold 90% alegreya;
+  	text-decoration: none;
+  	background-color:#211174;
+  	color:#FFFFFF;
+  	padding: 4px 12px 4px 12px;
+ 	border-radius: 10px;
+ 	cursor: pointer; 
+ }
+
+.btnEnviar:hover{
+	color:#A1E5E5;
+ }
+
+.btnRestablecer{
+	width: 20%;
+  	font: bold 90%px alegreya;
+  	text-decoration: none;
+  	background-color:#D5DBDB;
+  	color:#211174;
+  	padding: 4px 12px 4px 12px;
+ 	border-radius: 10px;
+ 	cursor: pointer; 
+}
+
+.btnRestablecer:hover{
+	color:#FF5703;
+}
+
+.btnCancelar{
+	width: 20%;
+  	font: bold 90%px alegreya;
+  	text-decoration: none;
+  	background-color:#D5DBDB;
+  	color:#FF5703;
+  	padding: 4px 12px 4px 12px;
+ 	border-radius: 10px;
+ 	cursor: pointer; 
+ }
+
+.btnCancelar:hover{
+ 	color: #211174;
+}
+
+/*Estilo al checkbox de Términos y Condiciones
+
+/* The container */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 20px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/*Final estilo Términos y Condiciones.*/
+
+footer, .botones{
+	text-align: center;
+}
+
+.pie{
+	background:#15B6B8;
+	padding:20px 40px;
+	color:#FFFFFF;
+	text-align:center;
+}
+

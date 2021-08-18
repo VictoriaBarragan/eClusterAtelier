@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Califica Satélite</title>
+        <link rel="stylesheet" type="text/css" href="../css/calificaAge.css">
+        <link rel="icon" href="../img/favicon.ico" sizes="32x32" type="image/vnd.microsoft.icon">
+    </head>
+    <body>
+    	<section class="ventanaCalificar">
+			<form>
+				<legend>Calificar Agente</legend>
+				
+				<fieldset>
+					<legend>Pago Oportuno</legend>
+					<label for="verde">Bueno</label>
+					<input type="radio" name="puntajeTiempoEntr" value="verde" checked="checked">
+					<label for="amarillo">Regular</label>
+					<input type="radio" name="puntajeTiempoEntr" value="amarillo">
+					<label for="rojo">Por Mejorar</label>
+					<input type="radio" name="puntajeTiempoEntr" value="rojo">
+				</fieldset>
+				<br>
+				
+				<fieldset>
+					<legend>Entrega Oportuna Material</legend>
+					<label for="verde">Bueno</label>
+					<input type="radio" name="calidad" value="verde" checked="checked">
+					<label for="amarillo">Regular</label>
+					<input type="radio" name="calidad" value="amarillo">
+					<label for="rojo">Por Mejorar</label>
+					<input type="radio" name="calidad" value="rojo">
+				</fieldset>
+				<br>
+				
+				<fieldset>
+				<legend>Negociador Justo</legend>
+				<label for="verde">Bueno</label>
+				<input type="radio" name="atencion" value="verde" checked="checked">
+				<label for="amarillo">Regular</label>
+				<input type="radio" name="atencion" value="amarillo">
+				<label for="rojo">Por Mejorar</label>
+				<input type="radio" name="atencion" value="rojo">
+				</fieldset>
+				<br>
+
+				<fieldset>
+					<div class="botones">
+		           		<!--Solo a manera de ejemplo con la etiqueta <button>-->
+		           		<button class="btnConsult" type="button" onclick=location.href="msjExitoCalifSat.html" title="">Calificar</button><br>
+
+		           		<!--<input class="btnEnviar" type="submit" value="Enviar" onclick=location.href="msjExitoCalifSat.html">-->
+		           	</div>
+	        	</fieldset>
+			</form>
+	    </section>
+    </body>
+</html>

@@ -1,0 +1,39 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing:border-box;
+	font-family: 'Alegreya SC', serif;
+}
+
+body{
+	background: #FFFFFF;
+}
+
+main{
+	width: 100%;
+}
+
+h4{
+	color: #211174;
+}
+
+table{
+	width: 100%;
+	border:1px solid #211174;
+	border-collapse: collapse;
+	display: auto;
+	padding: 15px;
+}
+
+table td{
+	border:1px solid #000;
+	padding: 20px;
+}
+table tbody tr:hover{
+	background: #A1E5E5;
+	cursor: pointer;
+}
+
+.btnConsult{
+	cursor: pointer;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Ingreso</title>
+        <link rel="stylesheet" type="text/css" href="../css/frmIniSesion.css">
+        <link rel="icon" href="../img/favicon.ico" sizes="32x32" type="image/vnd.microsoft.icon">
+    </head>
+    <body>
+        <header>
+        	<nav>
+        		<ul>
+        			<li><a href="../index.html">Inicio</a></li>
+        			<li><a href="sectorModa.html">Sector Moda</a></li>
+        			<li><a href="nosotros.html">Nosotros</a></li>
+        			<li><a href="pregFrecuentes.html">Preguntas Frecuentes</a></li>
+        			<li><a href="contactenos.html">Contáctenos</a></li>
+        		</ul>
+        	</nav>	
+        </header>
+        <main>
+            <section>
+                <figure>
+                    <img class="logo" src="../img/logo_eCa_V.png">
+                </figure>
+                <form name="frmIniSesion" id="formulario" method="get">
+                    <div id="divPanel" class="logueo">
+                        <label>Inicio de sesión</label>
+                        <label title="Máximo 15 caracteres.">Nombre Usuario*</label>
+                        <input class="accesosUser" type="text" name="nombreUsuario" minlength="3" maxlength="15" value="">
+                        
+                        <label title="Máximo 8 caracteres.">Clave*</label>
+                        <input class="accesosUser" type="text" name="contrasena" minlength="3" maxlength="8">
+
+                        <label title="Máximo 8 caracteres."><a>Recordar clave</a></label>
+                        <a href="frm_olvido.html" class="recordar">Recordar Contraseña</a>
+                    </div><br>
+                    <div class="botones">    
+                        <input class="btn_SAT" type="" name="accesoSat" value="Satelite" onclick=location.href="satelite.html"><br>
+                        <input class="btn_AGE" type="" name="accesoAge" value="Agente Comercial" onclick=location.href="agente.html"><br>
+                        <input class="btn_ADM" type="" name="accesoAdm" value="Administrador" onclick=location.href="admin.html"><br>
+                    </div>
+                    <input class="btn_restablecer" type="reset" name="restablecer">
+                    <input class="btn_cancelar" type="reset" value="Cancelar" onclick=location.href="../index.html">    
+                </form>
+            </section>
+        </main>        
+        <footer>
+        	<div class="pie">Copyright&copy; 2019 - Creación eCluster Atelier - Todos los derechos reservados</div>
+        </footer>
+    </body>
+</html>

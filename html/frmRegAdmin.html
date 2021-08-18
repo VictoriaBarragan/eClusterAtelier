@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>RegistroAdmin</title>
+        <link rel="stylesheet" type="text/css" href="../css/frmRegistro.css">
+        <link rel="icon" href="../img/favicon.ico" sizes="32x32" type="image/vnd.microsoft.icon">
+    </head>
+    <body>
+        <header>
+        	<div>
+        		<img class="logo" src="../img/logo_eCa_V.png">
+        	</div>
+        	<nav>
+        		<ul>
+        			<li><a href="../index.html">Inicio</a></li>
+        			<li><a href="sectorModa.html">Sector Moda</a></li>
+        			<li><a href="nosotros.html">Nosotros</a></li>
+        			<li><a href="pregFrecuentes.html">Preguntas Frecuentes</a></li>
+        			<li><a href="contactenos.html">Contáctenos</a></li>
+        		</ul>
+        	</nav>
+        </header>
+        <main>
+	    	<section>    
+	        	<h3 class="tituloFrmAdmin">Formulario creación usuario tipo Administrador</h3><br>
+	        	<form>
+					<div id="divPanel" class="logueo">
+                        <label>Tipo Administrador</label>
+                        <select class="selectAltura" name="codTipoAdmin" id="">
+                        	<option value="">Seleccionar</option>
+                        	<option value="1">Junior</option>
+                        	<option value="2">Standard</option>
+                        	<option value="3">Senior</option>
+                        </select>
+						<label>Nivel Administrador</label>
+                        <select class="selectAltura" name="codTipoAdmin" id="">
+                        	<option value="">Seleccionar</option>
+                        	<option value="1">1</option>
+                        	<option value="2">2</option>
+                        	<option value="3">3</option>
+                        </select>
+
+
+                        <label>Crear cuenta</label>
+                        <label title="Máximo 15 caracteres.">Nombre Usuario*</label>
+                        <input class="accesosUser" type="text" name="username" minlength="3" maxlength="15" value="">
+                        
+                        <label title="Máximo 8 caracteres.">Clave*</label>
+                        <input class="accesosUser" type="text" name="password" minlength="3" maxlength="8">
+
+                         <label title="Máximo 8 caracteres.">Confirmar clave*</label>
+                        <input class="accesosUser" type="text" name="confPassword" minlength="3" maxlength="8">
+                    </div><br>
+					<fieldset>
+							<legend>Datos personales</legend>
+							<label>Primer nombre*</label><br>
+						    <input type="text" name="primerNombreAli" placeholder="Ingresar primer nombre" maxlength="20" required>
+						    <label>Segundo nombre</label>
+						    <input type="text" name="segundoNombreAli" placeholder="Ingresar segundo nombre" maxlength="20">
+						    <label>Primer apellido*</label>
+						    <input type="text" name="primerApellAli" placeholder="Ingresar primer apellido" maxlength="20" required>
+						    <label>Segundo apellido</label>
+						    <input type="text" name="segundoApellAli" placeholder="Ingresar segundo apellido" maxlength="20">
+						    <label>E-Mail*</label>
+						    <input type="email" name="emailAliado" placeholder="Ingresar E-Mail" maxlength="35" required>
+							<label>Teléfono fijo</label>
+						    <input type="text" name="telFijoAliado" placeholder="Ingresar teléfono fijo" pattern="[0-9]{7}" maxlength="7">
+						    <label>Celular*</label>
+						    <input type="text" name="celAliado" placeholder="Ingresar número celular" pattern="[0-9]{10}" maxlength="10"required>
+						    <br><br>
+							<input class="btnRestablecer" type="reset" value="Restablecer">
+					</fieldset>
+					<fieldset>
+			        		<legend>Permisos Usuario Administrador</legend>
+			        		<label class="container">Crear Usuarios
+			        			<input name="rolCreaUser" type="checkbox">
+			        			<span class="checkmark"></span>
+			        		</label>
+							
+							<label class="container">Dar de baja usuarios
+								<input name="rolBajaUser" type="checkbox">
+								<span class="checkmark"></span>
+							</label>
+							
+							<label class="container">Restablecer claves
+			        			<input name="rolResetClaves" type="checkbox">
+			        			<span class="checkmark"></span>
+			        		</label>
+
+			        		<label class="container">Desactivar Proyectos
+			        			<input name="rolDesactProy" type="checkbox">
+								<span class="checkmark"></span>
+			        		</label>
+			        		
+			        		<label class="container">Responder PQRS
+			        			<input name="rolResPqrs" type="checkbox">
+								<span class="checkmark"></span>
+			        		</label>
+			        		
+			        		<label class="container">Responder Contáctenos
+			        			<input name="rolResContact" type="checkbox">
+								<span class="checkmark"></span>
+							</label>
+
+			        		<label class="container">Crear preguntas frecuentes
+			        			<input name="rolCreaPregFrec" type="checkbox">
+								<span class="checkmark"></span>
+			        		</label>
+							<label class="container">Eliminar preguntas frecuentes
+								<input name="rolBorraPregFrec" type="checkbox">
+								<span class="checkmark"></span>
+							</label>
+							<label class="container">Consultar preguntas frecuentes
+			        			<input name="rolConsultPregFrec" type="checkbox">
+			        			<span class="checkmark"></span>
+							</label>
+							<label class="container">Listar preguntas frecuentes
+			        			<input name="rolListarPregFrec" type="checkbox">
+								<span class="checkmark"></span>
+			        		</label>
+			        		<label class="container">Editar preguntas frecuentes
+			        			<input name="rolEditPregFrec" type="checkbox">
+			        			<span class="checkmark"></span>
+							</label>
+							<label class="container">Listar usuarios
+			        			<input name="rolListarUsuarios" type="checkbox">
+								<span class="checkmark"></span>
+							</label>
+							<label class="container">Consultar usuarios
+			        			<input name="rolConsultUsuarios" type="checkbox">
+								<span class="checkmark"></span>
+			        		</label>
+			        		<label class="container">Desactivar usuarios
+			        			<input name="rolDesactUsuarios" type="checkbox">
+								<span class="checkmark"></span>
+			        		</label>
+			        		<label class="container">Desactivar convocatorias
+								<input name="rolDesactConvocatorias" type="checkbox">
+								<span class="checkmark"></span>
+			        		</label><br>
+							<input class="btnRestablecer" type="reset" value="Restablecer">
+					</fieldset><br>
+					<div class="botones">
+		            	<input class="btnEnviar" type="submit" value="Enviar" onclick=location.href="admin.html">
+		            	<input class="btnRestablecer" type="reset" value="Restablecer">
+		            	<input class="btnCancelar" type="reset" value="Cancelar" onclick=location.href="../index.html">	
+	        		</div>
+	        	</form>    
+			</section>
+		</main>
+        <footer>
+        	<div class="pie">Copyright&copy; 2019 - Creación eCluster Atelier - Todos los derechos reservados</div>
+        </footer>
+    </body>
+</html>

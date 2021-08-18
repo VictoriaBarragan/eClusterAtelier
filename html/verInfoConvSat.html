@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Datos Convocatoria</title>
+        <link rel="stylesheet" type="text/css" href="../css/verInfoConv.css">
+        <link rel="icon" href="../img/favicon.ico" sizes="32x32" type="image/vnd.microsoft.icon">
+    </head>
+    <body>
+    	<main>
+        	<section>
+                <h3>Información de la Convocatoria</h3><br>
+                <form name="detalleReqConv">
+                    <form>
+                        <h4>Información del Agente Comercial</h4>
+                        <fieldset>
+                            <legend>Datos personales</legend>
+                            <label>Primer nombre</label>
+                            <input type="text" name="primerNombreAli" placeholder="Primer nombre" maxlength="20" disabled>
+                            <label>Segundo nombre</label>
+                            <input type="text" name="segundoNombreAli" placeholder="Segundo nombre" maxlength="20" disabled>
+                            <label>Primer apellido</label>
+                            <input type="text" name="primerApellAli" placeholder="Primer apellido" maxlength="20" disabled>
+                            <label>Segundo apellido</label>
+                            <input type="text" name="segundoApellAli" placeholder="Segundo apellido" maxlength="20" disabled>
+                            <label>Teléfono fijo</label>
+                            <input type="text" name="telFijoAliado" placeholder="Teléfono fijo" pattern="[0-9]{7}" maxlength="7" disabled>
+                            <label>Celular</label>
+                            <input type="text" name="celAliado" placeholder="Número celular" pattern="[0-9]{10}" maxlength="10" disabled>
+                            <label>E-Mail</label>
+                            <input type="email" name="emailAliado" placeholder="E-Mail" maxlength="35" disabled>
+                            <br>
+                        </fieldset>
+                        <br>
+                        <fieldset>  
+                            <legend>Datos comerciales</legend>
+                            <label>Razón social</label>
+                            <input type="text" name="razonSocAliado" placeholder="Razón social" maxlength="30" disabled>
+                            <label>Número registro mercantil</label>
+                            <input type="text" name="regMercAliado" placeholder="Registro mercantil" pattern="[0-9]{10}" maxlength="10" disabled>
+                            <label>RUT</label>
+                            <input type="text" name="rutAliado" placeholder="Número de RUT" pattern="[0-9]{0-10}" maxlength=10 disabled>
+                            <label>Fecha creación</label>
+                            <input type="date" name="fechaCreacion" disabled>
+                            <label>Especialidad</label>
+                            <input type="" name="" placeholder="Especialidad" disabled></input>
+                            <label>Dirección establecimiento</label>
+                            <input type="text" name="dirAgente" placeholder="Dirección comercial" disabled>
+                            </div>
+                            <label for="nombreLoc">Localidad</label>
+                            <input type="" name="" placeholder="Localidad" disabled>
+                            <label for="nombreBarrio">Barrio</label>
+                            <input type="" name="" placeholder="Barrio" disabled>
+                            <br>
+                        </fieldset>
+                    </form><br>
+                    <form>
+                        <fieldset>
+                            <legend>Documentos de soporte</legend>
+                            <table class="docSoporte" role="table">
+                                <thead role="row group">
+                                    <tr role="row">
+                                        <th role="1">Documento</th>
+                                        <th role="2">Ver</th>
+                                    </tr>       
+                                </thead>
+                                <tbody>
+                                    <tr role="row">
+                                        <td>Registro mercantil</td>
+                                        <td><button class="btnVer" type="button" onclick=location.href="../docs/soportesAliados/ejemploCertificadoMercantil.jpg">Ver</button></td>
+                                    </tr>
+                                    <tr role="row">
+                                        <td>RUT</td>
+                                        <td><button class="btnVer" type="button" onclick=location.href="../docs/soportesAliados/ejemploRut.jpg">Ver</button></td>
+                                    </tr>
+                                    <tr role="row">
+                                        <td>Foto fachada</td>
+                                        <td><button class="btnVer" type="button" onclick=location.href="../docs/soportesAliados/ejemploAlmacenAgente.jpg">Ver</button></td>
+                                    </tr>
+                                    <tr role="row">
+                                        <td>Foto local</td>
+                                        <td><button class="btnVer" type="button" onclick=location.href="../docs/soportesAliados/ejemploAlmacenAgente.jpg">Ver</button></td>
+                                    </tr>
+                                    <tr role="row">
+                                        <td>Foto logotipo</td>
+                                        <td><button class="btnVer" type="button" onclick=location.href="../docs/soportesAliados/logoAgente.jpg">Ver</button></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </fieldset>
+                    </form><br>
+                    <form>    
+                        <fieldset>
+            	        	<legend>Características de la prenda</legend>
+            	            <label>Tipo</label>
+                            <input type="" name="" placeholder="Prenda interior o exterior" disabled>
+                            <label>Nombre</label>
+                            <input type="" name="" placeholder="Nombre prenda" disabled>
+                            <label>Usuario</label>
+                            <input type="" name="" placeholder="Usuario prenda" disabled>
+                            <Label>Usos</label>
+        			        <input type="" name="" placeholder="Usos prenda" disabled>
+        			        <label>Material</label>
+        			        <input type="" name="" placeholder="Material" disabled>
+        	            </fieldset><br>
+                    </form><br>
+                    <form>
+                        <fieldset>
+                            <legend>Distribución cantidades por talla y color</legend>
+                            <table> 
+                            	<thead rol="rowgroup">
+                                    <tr rol="row">
+                                    	<th rol="1">Talla</th>
+                                        <th rol="2">Color</th>
+                                        <th rol="3">Cantidad</th>
+                                        <th rol="4">Observación</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr rol="row">
+                            	        <td rol="cell">
+                                        	<input type="" name="" placeholder="Talla" disabled>
+                                        </td>
+                                        <td rol="cell">
+                                         	<input type="" name="" placeholder="Color" disabled>        
+                                        </td>
+                                        <td rol="cell">
+                                            <input type="text" name="cantidad" placeholder="###" disabled>
+                                        </td>                            
+                                        <td rol="cell">
+                                            <input rows='2' cols='60' placeholder='Anotación' type="text" name="Anotación" disabled="">
+                                        </td>
+                                    </tr>
+                                    <tr rol="row">
+                                        <td rol="cell">
+                                            <input type="" name="" placeholder="Talla" disabled>
+                                        </td>
+                                        <td rol="cell">
+                                            <input type="" name="" placeholder="Color" disabled>
+                                        </td>
+                                        <td rol="cell">
+                                            <input type="text" name="cantidad" placeholder="###" disabled>
+                                        </td>                            
+                                        <td rol="cell">
+                                            <input rows='2' cols='60' placeholder='Anotación' type="text" name="Anotación" disabled>
+                                        </td>
+                                    </tr>
+                                    <tr rol="row">
+                                        <td rol="cell">
+                                            <input type="" name="" placeholder="Talla" disabled>
+                                        </td>
+                                        <td rol="cell">
+                                            <input type="" name="" placeholder="Color" disabled>        
+                                        </td>
+                                        <td rol="cell">
+                                            <input type="text" name="cantidad" placeholder="###" disabled>
+                                        </td>                            
+                                        <td rol="cell">
+                                            <input rows='2' cols='60' placeholder='Anotación' type="text" name="Anotación" disabled>
+                                        </td>
+                                    </tr>
+                                    <tr rol="row">
+                                        <td rol="cell">
+                                            <input type="" name="" placeholder="Talla" disabled>
+                                        </td>
+                                        <td rol="cell">
+                                            <input type="" name="" placeholder="Color" disabled>        
+                                        </td>
+                                        <td rol="cell">
+                                            <input type="text" name="cantidad" placeholder="###" disabled>
+                                        </td>                            
+                                        <td rol="cell">
+                                            <input rows='2' cols='60' placeholder='Anotación' type="text" name="Anotación" disabled>
+                                        </td>
+                                    </tr>        
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <td>Total Cantidad Prendas:</td>
+                                        <td>#######</td>
+                                    </tr>
+                                </tfoot>  
+                            </table>
+                        </fieldset><br>
+                    </form><br>
+                    <form>
+                        <fieldset>
+                            <legend>Presupuesto</legend>
+                            <label>Presupuesto</label>
+                           	<input type="number" name="presupuesto" pattern="[0-9]{10}" maxlength="9" size="10" disabled placeholder="Presupuesto">
+                        </fieldset><br>
+                    </form><br>
+                    <form>
+                        <fieldset>
+                            <legend>Paquete de servicios</legend>
+                            <label class="container">Confección
+                                <input type="checkbox" name="servConfeccion" checked="enable">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="container">Planchado
+                                <input type="checkbox" name="servPlanchado" disabled>
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="container">Empacado
+                                <input type="checkbox" name="servEmpacado" disabled>    
+                                <span class="checkmark"></span>
+                            </label>
+                        </fieldset><br>
+                    </form><br>
+                    <div>
+                        <button class="btnVolverAtras" type="button" value="volverAtras" onclick=location.href="misPostulacs.html">Volver atrás</button>
+                        <br><br>
+                    </div>
+                </form>
+            </section>
+        </main>
+	</body>
+</html>

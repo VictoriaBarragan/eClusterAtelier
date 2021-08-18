@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>RegistroAgente</title>
+        <link rel="stylesheet" type="text/css" href="../css/frmRegistro.css">
+        <link rel="icon" href="../img/favicon.ico" sizes="32x32" type="image/vnd.microsoft.icon">
+    </head>
+    <body>
+        <header>
+        	<div>
+        		<img class="logo" src="../img/logo_eCa_V.png">
+        	</div>
+        	<nav>
+        		<ul>
+        			<li><a href="../index.html">Inicio</a></li>
+        			<li><a href="sectorModa.html">Sector Moda</a></li>
+        			<li><a href="nosotros.html">Nosotros</a></li>
+        			<li><a href="pregFrecuentes.html">Preguntas Frecuentes</a></li>
+        			<li><a href="contactenos.html">Contáctenos</a></li>
+        		</ul>
+        	</nav>
+        </header>
+        <main>
+	    	<section>
+	    		<h3 class="tituloFrmAgente">Formulario de suscripción de Agente Comercial</h3><br>    
+	        	<form >
+	        		<div id="divPanel" class="logueo">
+                        <label>Crear cuenta</label>
+                        <label title="Máximo 15 caracteres.">Nombre Usuario*</label>
+                        <input class="accesosUser" type="text" name="username" minlength="3" maxlength="15" value="">
+                        
+                        <label title="Máximo 8 caracteres.">Clave*</label>
+                        <input class="accesosUser" type="text" name="password" minlength="3" maxlength="8">
+
+                         <label title="Máximo 8 caracteres.">Confirmar clave*</label>
+                        <input class="accesosUser" type="text" name="confPassword" minlength="3" maxlength="8">
+                    </div><br>
+	        		<fieldset>
+							<legend>Datos personales</legend>
+							<label>Primer nombre*</label><br>
+						    <input type="text" name="primerNombreAli" placeholder="Ingresar primer nombre" maxlength="20" required>
+						    <label>Segundo nombre</label>
+						    <input type="text" name="segundoNombreAli" placeholder="Ingresar segundo nombre" maxlength="20">
+						    <label>Primer apellido*</label>
+						    <input type="text" name="primerApellAli" placeholder="Ingresar primer apellido" maxlength="20" required>
+						    <label>Segundo apellido</label>
+						    <input type="text" name="segundoApellAli" placeholder="Ingresar segundo apellido" maxlength="20">
+						    <label>Teléfono fijo</label>
+						    <input type="text" name="telFijoAliado" placeholder="Ingresar teléfono fijo" pattern="[0-9]{7}" maxlength="7">
+						    <label>Celular*</label>
+						    <input type="text" name="celAliado" placeholder="Ingresar número celular" pattern="[0-9]{10}" maxlength="10"required>
+						    <label>E-Mail*</label>
+						    <input type="email" name="emailAliado" placeholder="Ingresar E-Mail" maxlength="35" required>
+						    <br><br>
+							<input class="btnRestablecer" type="reset" value="Restablecer">
+					</fieldset>
+					<fieldset>	
+							<legend>Datos comerciales Agente</legend>
+							<label>Razón social</label>
+						    <input type="text" name="razonSocAliado" placeholder="Ingresar nombre" maxlength="30">
+						    <label>Número registro mercantil</label>
+						    <input type="text" name="regMercAliado" placeholder="Ingresar nombre" pattern="[0-9]{10}" maxlength="10">
+						    <label>RUT*</label>
+						    <input type="text" name="rutAliado" placeholder="Ingresar número de RUT" pattern="[0-9]{0-10}" maxlength=10 required>
+						    <label>Fecha creación</label>
+						    <input type="date" name="fechaCreacion">
+						    <label>Especialidad</label>
+						    <select class="selectAltura" name="nomEspecialidad" id="">
+						    	<option value="">Seleccionar</option>
+						    	<option value="1">Dotaciones</option>
+						    	<option value="2">Lencería</option>
+						    	<option value="3">Deportiva</option>
+						    	<option value="4">Unformes escolares</option>
+						    	<option value="5">Novias</option>
+						    	<option value="5">Infantil</option>
+						    	<option value="5">Sastrería</option>
+						    </select><br><br>
+							<div class="dirGeo">
+								<label>Dirección establecimiento*</label><br>
+						    	<table class="adapTablaDir" role="table">
+						    		<thead role="rowgroup">
+										<tr role=row>
+											<th role="1">Tipo Calle*</th>
+							    			<th role="2">Número*</th>
+							    			<th role="3">Letra</th>
+							    			<th role="4">Bis</th>
+							    			<th role="5">Letra</th>
+							    			<th role="6">Punto Cardinal</th>
+							    			<th role="7">Núm1 Inmueble*</th>
+							    			<th role="8">Letra</th>
+							    			<th role="9">-</th>
+							    			<th role="10">Núm2 Inmueble*</th>
+							    			<th role="11">Punto Cardinal</th>
+							    		</tr>
+						    		</thead>
+						    		<tbody role="rowgroup">
+							    		<tr role="row">
+							    			<td role="cell">
+								    			<select class="selectAltura" name="tipoCalle" official_name="nombreOficial" alt_name="nombreComun" id="" required="">
+													<option value="">Seleccionar</option>
+													<option value="1">Carrera</option>
+													<option value="2">Transversal</option>
+													<option value="3">Calle</option>
+													<option value="4">Diagonal</option>
+													<option value="5">Avenida</option>
+													<option value="6">Avenida calle</option>
+													<option value="7">Avenida carrera</option>
+												</select>
+											</td>
+							    			<td role="cell">
+							    				<input type="text" class="numeroCalle" name="numeroCalle" pattern="[0-9]{1-3}" maxlength="3" required>
+							    			</td>
+							    			<td role="cell">
+							    				<input type="text" class="letraUnoDir" name="letraUnoDir" pattern="[A-Z]{1}" maxlength="1">
+							    			</td>
+							    			<td role="cell">
+							    				<select class="selectAltura" name="bis" id="">
+													<option value="">Seleccionar</option>
+													<option value="1">Bis</option>
+												</select>						
+											</td>
+							    			<td role="cell">
+							    				<input type="text" class="letraDosDir" name="letraDosDir" pattern="[A-Z]{1}" maxlength="1">
+							    			</td>
+							    			<td role="cell">
+							    				<select class="selectAltura" name="cardinalUnoDir" id="">
+													<option value="">Seleccionar</option>
+													<option value="1">Este</option>
+													<option value="2">Sur</option>
+													<option value="3">Occidente</option>
+													<option value="4">Norte</option>
+												</select>
+											</td>
+							    			<td role="cell">
+							    				<input type="text" class="num1Inmueble" name="num1Inmueble" pattern="[0-9]{1-3}" maxlength="3" required>	
+							    			</td>
+											<td role="cell">
+							    				<input type="text" class="letraTresDir" name="letraDosDir" pattern="[A-Z]{1}" maxlength="1">
+							    			</td>
+							    			<td role="cell">
+							    				<label>-</label>
+							    			</td>
+							    			<td role="cell">
+							    				<input type="text" class="num2Inmueble" name="num2Inmueble" pattern="[0-9]{1-3}" maxlength="3" required>	
+											</td>
+											<td role="cell">
+							    				<select class="selectAltura" name="cardinalUnoDir" id="">
+													<option value="">Seleccionar</option>
+													<option>Este</option>
+													<option>Sur</option>
+													<option>Occidente</option>
+													<option>Norte</option>
+												</select>
+											</td>
+										</tr>
+									</tbody>	
+						    	</table>
+						    </div>
+						    <label>Dirección generada</label>
+						    <input type="text" name="dirAliado">			
+						    <label for="nombreLoc">Localidad*</label>
+							<select class="selectAltura" name="nombreLoc" id="" required>
+								<option value="">Seleccionar</option>
+								<option value="">Antonio Nariño</option>
+								<option value="">Barrios Unidos</option>
+								<option value="">Bosa</option>
+								<option value="">Candelaria</option>
+								<option value="">Chapinero</option>
+								<option value="">Ciudad Bolivar</option>
+								<option value="">Engativa</option>
+								<option value="">Fontibón</option>
+								<option value="">Kennedy</option>
+								<option value="">Los Mártires</option>
+								<option value="">Puente Aranda</option>
+								<option value="">Rafaél Uribe Uribe</option>
+								<option value="">San Cristobal</option>
+								<option value="">Santa Fe</option>
+								<option value="">Suba</option>
+								<option value="">Sumapaz</option>
+								<option value="">Teusaquillo</option>
+								<option value="">Tunjuelito</option>
+								<option value="">Usaquén</option>
+								<option value="">Usme</option>
+							</select>
+							<label for="nombreBarrio">Barrio*</label>
+							<select class="selectAltura" name="" id="" required>
+								<option value="">Seleccionar</option>
+								<option value="">nombreBarrio1</option>
+								<option value="">nombreBarrio2</option>
+								<option value="">nombreBarrio3</option>
+								<option value="">nombreBarrio4</option>
+								<option value="">nombreBarrio5</option>
+								<option value="">nombreBarrio6</option>
+								<option value="">nombreBarrio7</option>
+								<option value="">nombreBarrio8</option>
+								<option value="">nombreBarrio9</option>
+								<option value="">nombreBarrio10</option>
+								<option value="">nombreBarrio11</option>
+								<option value="">nombreBarrio12</option>
+								<option value="">nombreBarrio13</option>
+								<option value="">nombreBarrio14</option>
+								<option value="">nombreBarrio15</option>
+								<option value="">nombreBarrio16</option>
+								<option value="">nombreBarrio17</option>
+								<option value="">nombreBarrio18</option>
+								<option value="">nombreBarrio19</option>
+								<option value="">nombreBarrio20</option>
+								<option value="">nombreBarrio21</option>
+								<option value="">nombreBarrio22</option>
+								<option value="">nombreBarrio23</option>
+								<option value="">nombreBarrio24</option>
+								<option value="">nombreBarrio25</option>
+								<option value="">nombreBarrio26</option>
+								<option value="">nombreBarrio27</option>
+								<option value="">nombreBarrio28</option>
+								<option value="">nombreBarrio29</option>
+								<option value="">nombreBarrio30</option>
+								<option value="">nombreBarrio31</option>
+								<option value="">nombreBarrio32</option>
+								<option value="">nombreBarrio33</option>
+								<option value="">nombreBarrio34</option>
+								<option value="">nombreBarrio35</option>
+								<option value="">nombreBarrio36</option>
+								<option value="">nombreBarrio37</option>
+								<option value="">nombreBarrio38</option>
+								<option value="">nombreBarrio39</option>
+								<option value="">nombreBarrio40</option>
+								<option value="">nombreBarrio41</option>
+								<option value="">nombreBarrio42</option>
+								<option value="">nombreBarrio43</option>
+								<option value="">nombreBarrio44</option>
+								<option value="">nombreBarrio45</option>
+								<option value="">nombreBarrio46</option>
+								<option value="">nombreBarrio47</option>
+								<option value="">nombreBarrio48</option>
+								<option value="">nombreBarrio49</option>
+								<option value="">nombreBarrio50</option>
+								<option value="">nombreBarrio51</option>
+								<option value="">nombreBarrio52</option>
+								<option value="">nombreBarrio53</option>
+								<option value="">nombreBarrio54</option>
+								<option value="">nombreBarrio55</option>
+								<option value="">nombreBarrio56</option>
+								<option value="">nombreBarrio57</option>
+								<option value="">nombreBarrio58</option>
+								<option value="">nombreBarrio59</option>
+								<option value="">nombreBarrio60</option>
+							</select>
+							<br><br>
+							<input class="btnRestablecer" type="reset" value="Restablecer">
+					</fieldset>
+					<fieldset>
+			        		<legend>Documentos de soporte</legend>
+			        		<label>Registro mercantil:</label>
+			        		<input name="regMercantilDoc" type="file" accept="application/pdf">
+							<label>RUT*</label>
+							<input name="rutDoc" type="file" accept="application/pdf" required="">
+							<label>Foto fachada*:</label>
+			        		<input name="fachadaImg" type="file" accept="image/jpeg,image/gif,image/png,application/pdf" required="">
+			        		<label>Foto taller*:</label>
+			        		<input name="tallerImg" type="file" accept="image/jpeg,image/gif,image/png,application/pdf" required="">
+			        		<label>Foto aliado*(perfil):</label>
+			        		<input name="fotoAliado" type="file" accept="image/jpeg,image/gif,image/png,application/pdf" required="">
+			        		<label>Foto Logotipo:</label>
+			        		<input name="LogoAli" type="file" accept="image/jpeg,image/gif,image/png,application/pdf"><br><br>
+							<input class="btnRestablecer" type="reset" value="Restablecer">
+					</fieldset><br>
+					<h4>Términos y Condiciones</h4>
+					<p>Nos acogemos a la Ley 1581 de 2012 para el tratamiento de datos personales en Colombia.<a href="#">Ver nuestra política.</a></p>
+					<label class="container" title="Requerido si desea continuar.">Acepto
+	  					<input type="checkbox" required>
+	  					<span class="checkmark"></span>
+					</label><br>
+					<div class="botones">
+		            	<input class="btnEnviar" type="submit" value="Enviar" onclick=location.href="agente.html">
+		            	<input class="btnRestablecer" type="reset" value="Restablecer">
+		            	<input class="btnCancelar" type="reset" value="Cancelar" onclick=location.href="../index.html">	
+	        		</div>
+	        	</form>    
+			</section>
+		</main>
+        <footer>
+        	<div class="pie">Copyright&copy; 2019 - Creación eCluster Atelier - Todos los derechos reservados</div>
+        </footer>
+    </body>
+</html>

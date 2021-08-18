@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Convocatoria</title>
+        <link rel="stylesheet" type="text/css" href="../css/publicarConv.css">
+        <link rel="icon" href="../img/favicon.ico" sizes="32x32" type="image/vnd.microsoft.icon">
+    </head>
+    <body>
+    	<main>
+        	<section>
+                <h3>Ingreso Requerimientos Convocatoria</h3>
+                <form name="detalleReqConv">
+                    <fieldset>
+        	        	<legend>Características de la prenda</legend>
+        	            <label>Tipo*</label><br>
+                        <select class="selectAltura" name="tipoPrenda" required>
+                            <option value="">Seleccionar</option>
+                            <option value="1">Interior</option> 
+                            <option value="2">Exterior</option> 
+                        </select>
+                        <label>Nombre*</label><br>
+                        <select class="selectAltura" name="nombrePrenda" required>
+                            <option value="">Seleccionar</option>
+                            <option value="1">Jean</option> 
+                            <option value="2">Camisa</option> 
+                            <option value="3">Traje Sastre</option>
+                            <option value="4">Uniforme Deportivo</option>
+                            <option value="">Camiseta</option>
+                            <option value="1">Chaqueta</option> 
+                            <option value="2">Blusa</option> 
+                            <option value="3">Vestido</option>
+                            <option value="4">Slack</option>
+                            <option value="5">Panties</option>
+                            <option value="6">Calzoncillo</option>
+                            <option value="7">Blusa</option>
+                        </select>
+                        <label>Usuario*</label>
+                        <select class="selectAltura" name="usuario" required>
+                            <option value="">Seleccionar</option>
+                            <option value="1">Dama</option> 
+                            <option value="2">Caballero</option> 
+                            <option value="3">Niña</option>
+                            <option value="4">Niño</option>
+                        </select>
+                        <Label>Usos*</label>
+    			        <select class="selectAltura" name="tipo_Prenda" required>
+    				        <option value="">Seleccionar</option>
+    				        <option value="1">Eventos Especiales</option>
+    				        <option value="2">Trabajo</option> 
+    				        <option value="3">Lluvia</option>
+    				        <option value="4">Deportiva</option>
+    				        <option value="5">Protección y Seguridad</option>
+    				        <option value="6">Vestir General</option>
+    				        <option value="7">Uniformes Deportivos</option>
+    				        <option value="8">Uniformes Escolares</option>
+    				        <option value="9">Lencería</option>
+    			        </select>
+    			        <label>Material*</label>
+    			        <select class="selectAltura" name="Material" required>
+    				        <option value="">Seleccionar</option>
+    				        <option value="1">Dacrón</option> 
+    				        <option value="2">Seda</option> 
+    				        <option value="3">Poliester</option>
+    				        <option value="4">Algodón</option>
+    				        <option value="5">Lana</option>
+    				        <option value="6">Chalis</option> 
+    				        <option value="7">Indigo</option> 
+    				        <option value="8">Dril</option>
+    				        <option value="9">Satín</option>
+    		            </select>
+    	            </fieldset><br>
+                    <fieldset>
+                        <legend>Distribución cantidades por talla y color</legend>
+                        <table> 
+                        	<thead rol="rowgroup">
+                                <tr rol="row">
+                                	<th rol="1"><label>Talla*</label></th>
+                                    <th rol="2"><label>Color*</label></th>
+                                    <th rol="3"><label>Cantidad*</label></th>
+                                    <th rol="4"><label>Observación</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr rol="row">
+                        	        <td rol="cell">
+                                    	<select class="selectAltura" name="talla" required>
+        	                                <option value="">Seleccionar</option>
+        	                                <option value="1">SX</option> 
+        	                                <option value="2">X</option> 
+        	                                <option value="3">M</option>
+        	                                <option value="4">L</option>
+        	                                <option value="5">XL</option>
+        	                                <option value="6">1</option> 
+        	                                <option value="7">2</option> 
+        	                                <option value="8">3</option>
+        	                                <option value="9">4</option>
+        	                                <option value="10">5</option>
+        	                                <option value="11">6</option>
+        	                                <option value="12">7</option>
+        	                                <option value="13">8</option>
+        	                                <option value="14">9</option> 
+        	                                <option value="15">10</option> 
+        	                                <option value="16">11</option>
+        	                                <option value="17">12</option>
+        	                                <option value="18">13</option>
+        	                                <option value="19">14</option>
+        	                                <option value="20">15</option>
+        	                                <option value="21">16</option>
+                                  		</select>
+                                    </td>
+                                    <td rol="cell">
+                                     	<select class="selectAltura" name="color" required>
+                                        	<option value="">Seleccionar</option>
+                                            <option value="1">Amarillo</option> 
+                                            <option value="2">Verde</option> 
+                                            <option value="3">Azul</option>
+                                            <option value="4">Rojo</option>
+                                            <option value="5">Naranja</option>
+                                            <option value="6">Pepiado</option>
+                                            <opion value="7">Estampado Flores</option> 
+                                            <option value="8">Estampado Muñecos</option> 
+                                        </select>        
+                                    </td>
+                                    <td rol="cell">
+                                        <input type="text" name="cantidad" required>
+                                    </td>                            
+                                    <td rol="cell">
+                                        <input rows='2' cols='60' placeholder='Anotación' type="text" name="Anotación">
+                                    </td>
+                                    </tr>
+                                    <tr rol="row">
+                                    	<td rol="cell">
+                                        	<select class="selectAltura" name="talla" required>
+                                                <option value="">Seleccionar</option>
+                                                <option value="1">SX</option> 
+                                                <option value="2">X</option> 
+                                                <option value="3">M</option>
+                                                <option value="4">L</option>
+                                                <option value="5">XL</option>
+                                                <option value="6">1</option> 
+                                                <option value="7">2</option> 
+                                                <option value="8">3</option>
+                                                <option value="9">4</option>
+                                                <option value="10">5</option>
+                                                <option value="11">6</option>
+                                                <option value="12">7</option>
+                                                <option value="13">8</option>
+                                                <option value="14">9</option> 
+                                                <option value="15">10</option> 
+                                                <option value="16">11</option>
+                                                <option value="17">12</option>
+                                                <option value="18">13</option>
+                                                <option value="19">14</option>
+                                                <option value="20">15</option>
+                                                <option value="21">16</option>
+                                            </select>
+                                        </td>
+                                        <td rol="cell">
+                                            <select class="selectAltura" name="color" required>
+                                                <option value="">Seleccionar</option>
+                                                <option value="1">Amarillo</option> 
+                                                <option value="2">Verde</option> 
+                                                <option value="3">Azul</option>
+                                                <option value="4">Rojo</option>
+                                                <option value="5">Naranja</option>
+                                                <option value="6">Pepiado</option>
+                                                <opion value="7">Estampado Flores</option> 
+                                                <option value="8">Estampado Muñecos</option> 
+                                                <option value="9">Adicionar nuevo</option>
+                                            </select>        
+                                        </td>
+                                        <td rol="cell">
+                                            <input type="text" name="cantidad" required>
+                                        </td>                            
+                                        <td rol="cell">
+                                            <input rows='2' cols='60' placeholder='Anotación' type="text" name="obs">
+                                       	</td>
+                                    </tr>
+                                    <tr rol="row">
+                                        <td rol="cell">
+                                            <select class="selectAltura" name="talla" required>
+                                                <option value="">Seleccionar</option>
+                                                <option value="1">SX</option> 
+                                                <option value="2">X</option> 
+                                                <option value="3">M</option>
+                                                <option value="4">L</option>
+                                                <option value="5">XL</option>
+                                                <option value="1">1</option> 
+                                                <option value="2">2</option> 
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                                <option value="5">6</option>
+                                                <option value="5">7</option>
+                                                <option value="5">8</option>
+                                                <option value="6">9</option> 
+                                                <option value="7">10</option> 
+                                                <option value="8">11</option>
+                                                <option value="9">12</option>
+                                                <option value="10">13</option>
+                                                <option value="11">14</option>
+                                                <option value="12">15</option>
+                                                <option value="13">16</option>
+                                            </select>
+                                        </td>
+                                        <td rol="cell">
+                                            <select class="selectAltura" name="color" required>
+                                                <option value="">Seleccionar</option>
+                                                <option value="1">Amarillo</option> 
+                                                <option value="2">Verde</option> 
+                                                <option value="3">Azul</option>
+                                                <option value="4">Rojo</option>
+                                                <option value="5">Naranja</option>
+                                                <option value="6">Pepiado</option>
+                                                <option value="1">Estampado Flores</option> 
+                                                <option value="2">Estampado Muñecos</option> 
+                                                <option value="3">Adicionar nuevo</option>
+                                            </select>        
+                                        </td>
+                                        <td rol="cell">
+                                            <input type="text" name="cantidad" maxlength="3" required>
+                                        </td>                            
+                                        <td rol="cell">
+                                            <input rows='2' cols='60' placeholder='Anotación' type="text" name="Anotación" maxlength="15">
+                                       	</td>
+                                    </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td>Total Cantidad Prendas:</td>
+                                    <td>#######</td>
+                                </tr>
+                            </tfoot>  
+                        </table>
+                    </fieldset><br>
+                    <fieldset>
+                        <legend>Presupuesto</legend>
+                        <label>Presupuesto*</label>
+                       	<input type="number" name="presupuesto" pattern="[0-9]{10}" maxlength="9" size="10" required>
+                    </fieldset><br>
+                    <fieldset>
+                        <legend>Paquete de servicios*</legend>
+                        <label class="container">Confección* 
+                            <input type="checkbox" name="servConfeccion" checked="enable" required>
+                            <span class="checkmark"></span>
+                        </label>
+                        
+                        <label class="container">Planchado
+                            <input type="checkbox" name="servPlanchado">
+                            <span class="checkmark"></span>
+                        </label>
+                        
+                        <label class="container">Empacado
+                            <input type="checkbox" name="servEmpacado">    
+                            <span class="checkmark"></span>
+                        </label>
+                    </fieldset><br>
+                    <div class="cajaBotones">
+                        <button class="btn_guardarConv" onclick=location.href="msjGuardadoConvExito.html" title="Guarda la convocatoria para publicarla luego.">Guardar</button><br><br>
+                        
+                        <button class="btn_guardaryPubConv" onclick=location.href="msjPublicacionExitoConv.html" type="buttom" title="Guarda la convocatoria y la publica inmediatamente.">Guardar y Publicar</button><br><br>
+
+                    	<input class="btn_restablecer" type="reset" value="Restablecer" title="Blanquea los campos para llenar de nuevo.">
+                        <br><br>
+                    </div>
+                </form>
+            </section>
+        </main>
+	</body>
+</html>
